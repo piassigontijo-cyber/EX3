@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 3 — Célula industrial virtual</title>
+  </head>
+  <body>
+    <canvas id="renderCanvas"></canvas>
+    <aside id="painel" aria-label="Painel de operação">
+      <h1>Célula virtual</h1>
+      <p id="estado" class="estado parado">PARADO</p>
+      <dl>
+        <div><dt>Peças detectadas</dt><dd id="contador">0</dd></div>
+        <div><dt>Sensor</dt><dd id="sensor">LIVRE</dd></div>
+        <div><dt>Alarme</dt><dd id="alarme">NORMAL</dd></div>
+      </dl>
+      <div class="botoes">
+        <button id="btnStart" class="start">START</button>
+        <button id="btnStop" class="stop" disabled>STOP</button>
+        <button id="btnReset" class="reset" disabled>RESET</button>
+      </div>
+      <p id="mensagem">Pronto para iniciar.</p>
+    </aside>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

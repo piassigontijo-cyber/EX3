@@ -1,0 +1,13 @@
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; font-family: Arial, sans-serif; background: #10151d; }
+#renderCanvas { width: 100%; height: 100%; display: block; touch-action: none; }
+#painel { position: absolute; top: 18px; left: 18px; width: 280px; padding: 18px; color: #eef4fa; background: rgba(13, 20, 29, .92); border: 1px solid #4d6172; border-radius: 10px; box-shadow: 0 8px 28px rgba(0,0,0,.35); }
+h1 { margin: 0 0 10px; font-size: 21px; }
+.estado { margin: 0 0 13px; padding: 7px; text-align: center; font-weight: 700; border-radius: 5px; }
+.parado { background: #495765; } .rodando { background: #167c42; } .falha { background: #a52f2f; }
+dl { margin: 0; } dl div { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #344452; }
+dt { color: #b8c7d4; } dd { margin: 0; font-weight: 700; }
+.botoes { display: flex; gap: 7px; margin-top: 15px; }
+button { flex: 1; padding: 9px 4px; border: 0; border-radius: 5px; font-weight: 800; cursor: pointer; }
+button:disabled { opacity: .32; cursor: not-allowed; }
+.start { background: #39cf74; } .stop { background: #f05c54; } .reset { background: #f2b84b; }
+#mensagem { min-height: 34px; margin: 13px 0 0; color: #b8c7d4; font-size: 13px; line-height: 1.3; }
